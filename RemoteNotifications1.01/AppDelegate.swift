@@ -85,6 +85,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
       
+        print("+++++++++++++++++++++++++++++")
+        
+        print(deviceToken)
+        
+        print("+++++++++++++++++++++++++++++")
+        
     }
 
 
