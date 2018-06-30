@@ -107,6 +107,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             let mycolor = UIColor.black
 
         }
+        if response.notification.request.identifier == "Vinu"
+        {
+            
+            
+        }
         completionHandler()
     }
 
