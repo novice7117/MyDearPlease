@@ -102,7 +102,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         if response.notification.request.identifier == "Subhash"
         {
             print("Please handle the notification")
+            
+            
+            let mycolor = UIColor.black
+
         }
+        completionHandler()
     }
 
 }
