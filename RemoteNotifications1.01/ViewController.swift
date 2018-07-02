@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         content.body  =  "Body "
         content.sound = UNNotificationSound.default()
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        let request = UNNotificationRequest(identifier: "Subhash", content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: "One", content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
