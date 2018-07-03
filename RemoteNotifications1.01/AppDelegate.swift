@@ -82,12 +82,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         
     }
+
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
       
+        let token = deviceToken.map{String(format: "%02.2hhx", $0)}.joined()
+        
         print("+++++++++++++++++++++++++++++")
         
-        print(deviceToken)
+        print(token)
         
         print("+++++++++++++++++++++++++++++")
         
@@ -107,7 +110,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             let mycolor = UIColor.black
 
         }
-        if response.notification.request.identifier == "Vinu"
+        if response.notification.request.identifier == "Two"
         {
             
             
